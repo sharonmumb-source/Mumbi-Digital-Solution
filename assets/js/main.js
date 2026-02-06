@@ -7,37 +7,63 @@
 /* ===== DOMContentLoaded Wrapper ===== */
 document.addEventListener('DOMContentLoaded', () => {
 
-  /* ==============================
-     1. TESTIMONIAL SLIDER
-  =============================== */
-  const slider = document.querySelector('.testimonial-slider');
-  if (slider) {
-    const slides = document.querySelectorAll('.testimonial-slide');
-    const nextBtn = document.querySelector('.next-btn');
-    const prevBtn = document.querySelector('.prev-btn');
-    let index = 0;
+/* ===============================
+   TESTIMONIAL SLIDER
+================================ */
+const slider = document.querySelector('.testimonial-slider');
 
-    // Show slide based on index
-    function showSlide(i) {
-      slider.scrollLeft = slides[i].offsetLeft;
-    }
+if (slider) {
+  const slides = document.querySelectorAll('.testimonial-slide');
+  const nextBtn = document.querySelector('.next-btn');
+  const prevBtn = document.querySelector('.prev-btn');
 
-    // Next button click
-    if (nextBtn) {
-      nextBtn.addEventListener('click', () => {
-        index = (index + 1) % slides.length;
-        showSlide(index);
-      });
-    }
+  let index = 0;
+  const totalSlides = slides.length;
+  const slideInterval = 4000; // 4 seconds
+  let autoSlide;
 
-    // Previous button click
-    if (prevBtn) {
-      prevBtn.addEventListener('click', () => {
-        index = (index - 1 + slides.length) % slides.length;
-        showSlide(index);
-      });
-    }
+  function showSlide(i) {
+    slider.style.transform = `translateX(-${i * 100}%)`;
   }
+
+  function nextSlide() {
+    index = (index + 1) % totalSlides;
+    showSlide(index);
+  }
+
+  function prevSlide() {
+    index = (index - 1 + totalSlides) % totalSlides;
+    showSlide(index);
+  }
+
+  // Button controls
+  if (nextBtn) {
+    nextBtn.addEventListener('click', () => {
+      nextSlide();
+      resetAutoSlide();
+    });
+  }
+
+  if (prevBtn) {
+    prevBtn.addEventListener('click', () => {
+      prevSlide();
+      resetAutoSlide();
+    });
+  }
+
+  // Auto sliding
+  function startAutoSlide() {
+    autoSlide = setInterval(nextSlide, slideInterval);
+  }
+
+  function resetAutoSlide() {
+    clearInterval(autoSlide);
+    startAutoSlide();
+  }
+
+  // Start slider
+  startAutoSlide();
+}
 
   /* ==============================
      2. SMOOTH SCROLLING FOR ANCHORS
