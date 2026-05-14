@@ -1,115 +1,595 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact Us | Mumbi Digital Solutions</title>
-  <meta name="description" content="Contact Mumbi Digital Solutions to discuss your website project, request a quote, or chat on WhatsApp.">
-  <link rel="stylesheet" href="assets/css/style.css">
+
+  <meta name="viewport"
+  content="width=device-width, initial-scale=1.0">
+
+  <title>
+    Contact Us | Mumbi Digital Solutions
+  </title>
+
+  <meta name="description"
+  content="Contact Mumbi Digital Solutions for premium website design, ecommerce stores, and digital solutions.">
+
+  <!-- CSS -->
+  <link rel="stylesheet"
+  href="assets/css/style.css">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect"
+  href="https://fonts.googleapis.com">
+
+  <link rel="preconnect"
+  href="https://fonts.gstatic.com"
+  crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+  rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
 </head>
+
 <body>
 
-  <!-- Header -->
-  <header class="header">
-    <div class="container">
-      <h1 class="logo"><a href="index.html"><img src="assets/images/logo.png" alt="Mumbi Digital Solutions Logo"></a></h1>
-      <nav>
-        <a href="index.html">Home</a>
-        <a href="services.html">Services</a>
-        <a href="portfolio.html">Portfolio</a>
-        <a href="about.html">About</a>
-        <a href="contact.html" class="btn">Contact</a>
-      </nav>
+<!-- ===================================================
+     HEADER
+=================================================== -->
+<header class="header">
+
+  <div class="container nav-container">
+
+    <div class="logo">
+
+      <a href="index.html">
+
+        <img src="assets/images/logo.png"
+        alt="Mumbi Digital Solutions Logo">
+
+      </a>
+
     </div>
-  </header>
 
-  <!-- Contact Section -->
-  <section class="contact">
-    <div class="container">
-      <h2>Contact Us</h2>
-      <p>Have a project or question? Reach out via WhatsApp or our contact form below:</p>
 
-      <!-- WhatsApp CTA -->
-      <a href="https://wa.me/254755570096" target="_blank" class="btn btn-primary">Chat on WhatsApp</a>
+    <nav class="navbar">
 
-      <!-- Contact Form -->
-      <form name="contact" method="POST" data-netlify="true" action="thank-you.html">
-        <label for="name">Name:</label>
-        <input type="text" name="name" id="name" required>
+      <a href="index.html">Home</a>
 
-        <label for="email">Email:</label>
-        <input type="email" name="email" id="email" required>
+      <a href="services.html">Services</a>
 
-        <label for="message">Message:</label>
-        <textarea name="message" id="message" rows="5" required></textarea>
+      <a href="portfolio.html">Portfolio</a>
 
-        <button type="submit" class="btn btn-primary">Send Message</button>
+      <a href="about.html">About</a>
+
+      <a href="contact.html"
+      class="active nav-btn">
+        Contact
+      </a>
+
+    </nav>
+
+  </div>
+
+</header>
+
+
+<!-- ===================================================
+     CONTACT HERO
+=================================================== -->
+<section class="contact-hero">
+
+  <div class="container contact-hero-content">
+
+    <span class="hero-tag">
+      CONTACT US
+    </span>
+
+    <h1>
+      Let’s Build Something
+      Amazing Together
+    </h1>
+
+    <p>
+      Have a project idea or need a professional website for your business? Reach out today and let’s discuss how we can help grow your online presence.
+    </p>
+
+  </div>
+
+</section>
+
+
+<!-- ===================================================
+     CONTACT SECTION
+=================================================== -->
+<section class="contact-page">
+
+  <div class="container contact-container">
+
+    <!-- LEFT SIDE -->
+    <div class="contact-info">
+
+      <div class="section-title left-align">
+
+        <span>GET IN TOUCH</span>
+
+        <h2>
+          Ready To Start Your Project?
+        </h2>
+
+      </div>
+
+      <p class="contact-text">
+        We help businesses create modern websites that attract clients, increase trust, and grow brands online.
+      </p>
+
+
+      <!-- INFO BOX -->
+      <div class="contact-box">
+
+        <i class="fa-brands fa-whatsapp"></i>
+
+        <div>
+          <h3>WhatsApp</h3>
+          <p>+254 755 570 096</p>
+        </div>
+
+      </div>
+
+
+      <!-- INFO BOX -->
+      <div class="contact-box">
+
+        <i class="fa-solid fa-location-dot"></i>
+
+        <div>
+          <h3>Location</h3>
+          <p>Nyeri, Kenya</p>
+        </div>
+
+      </div>
+
+
+      <!-- INFO BOX -->
+      <div class="contact-box">
+
+        <i class="fa-solid fa-clock"></i>
+
+        <div>
+          <h3>Availability</h3>
+          <p>Monday - Saturday</p>
+        </div>
+
+      </div>
+
+
+      <!-- SOCIALS -->
+      <div class="contact-socials">
+
+        <a href="#">
+          <i class="fa-brands fa-facebook-f"></i>
+        </a>
+
+        <a href="#">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+
+        <a href="#">
+          <i class="fa-brands fa-linkedin-in"></i>
+        </a>
+
+      </div>
+
+    </div>
+
+
+    <!-- RIGHT SIDE -->
+    <div class="contact-form-wrapper">
+
+      <form
+      name="contact"
+      method="POST"
+      data-netlify="true"
+      class="contact-form"
+      action="thank-you.html">
+
+        <input type="hidden"
+        name="form-name"
+        value="contact">
+
+
+        <!-- NAME -->
+        <div class="input-group">
+
+          <label for="name">
+            Full Name
+          </label>
+
+          <input type="text"
+          id="name"
+          name="name"
+          placeholder="Enter your full name"
+          required>
+
+        </div>
+
+
+        <!-- EMAIL -->
+        <div class="input-group">
+
+          <label for="email">
+            Email Address
+          </label>
+
+          <input type="email"
+          id="email"
+          name="email"
+          placeholder="Enter your email"
+          required>
+
+        </div>
+
+
+        <!-- SERVICE -->
+        <div class="input-group">
+
+          <label for="service">
+            Service Needed
+          </label>
+
+          <select id="service"
+          name="service"
+          required>
+
+            <option value="">
+              Select Service
+            </option>
+
+            <option>
+              Business Website
+            </option>
+
+            <option>
+              Ecommerce Store
+            </option>
+
+            <option>
+              Website Redesign
+            </option>
+
+            <option>
+              Booking System
+            </option>
+
+          </select>
+
+        </div>
+
+
+        <!-- MESSAGE -->
+        <div class="input-group">
+
+          <label for="message">
+            Project Details
+          </label>
+
+          <textarea
+          id="message"
+          name="message"
+          rows="6"
+          placeholder="Tell us about your project..."
+          required></textarea>
+
+        </div>
+
+
+        <!-- BUTTON -->
+        <button type="submit"
+        class="btn-primary">
+
+          Send Message
+
+        </button>
+
+
+        <!-- WHATSAPP -->
+        <a href="https://wa.me/254755570096"
+        target="_blank"
+        class="whatsapp-contact-btn">
+
+          <i class="fa-brands fa-whatsapp"></i>
+
+          Chat on WhatsApp
+
+        </a>
+
       </form>
 
+    </div>
 
- <form onsubmit="sendWhatsApp(); return false;">
-  <input type="text" id="name" placeholder="Your Name" required>
-  <textarea id="message" placeholder="Your Message" required></textarea>
-  <button type="submit">Send via WhatsApp</button>
- </form>
+  </div>
 
-<script>
-function sendWhatsApp() {
-  const name = document.getElementById("name").value;
-  const message = document.getElementById("message").value;
-  const phone = "254755570096"; // your number
-  const url = `https://wa.me/${phone}?text=Hello, my name is ${name}. ${message}`;
-  window.open(url, "_blank");
-}
-</script>
+</section>
+
+
+<!-- ===================================================
+     WHY CLIENTS TRUST US
+=================================================== -->
+<section class="why-us">
+
+  <div class="container">
+
+    <div class="section-title">
+
+      <span>WHY CLIENTS TRUST US</span>
+
+      <h2>
+        Professional Digital Solutions
+      </h2>
 
     </div>
-  </section>
 
-  <!-- Testimonials Section -->
-  <section class="testimonials">
-    <div class="container">
-      <h3>What Our Clients Say</h3>
-      <div class="testimonial-slider">
-        <div class="testimonial-slide">
-          <img src="assets/images/kelvin.k.png" alt="Client Testimonial">
-          <p>"Mumbi Digital Solutions transformed our website. Our client inquiries doubled in a month!"</p>
-          <h5>- john clack</h5>
-        </div>
-        <div class="testimonial-slide">
-          <img src="assets/images/Ann wanja.png" alt="Client Testimonial">
-          <p>"Professional, fast, and exactly what we needed to grow our business online."</p>
-          <h5>- Christine Kally</h5>
-        </div>
-        <div class="testimonial-slide">
-          <img src="assets/images/Tamara tiara.jpg" alt="Client Testimonial">
-          <p>"Highly recommended! Their website design helped us attract more customers immediately."</p>
-          <h5>- Ann Wanja</h5>
-        </div>
+
+    <div class="why-grid">
+
+      <!-- BOX 1 -->
+      <div class="why-card">
+
+        <i class="fa-solid fa-laptop-code"></i>
+
+        <h3>
+          Premium Design
+        </h3>
+
+        <p>
+          Modern website designs that instantly improve business credibility.
+        </p>
+
       </div>
-      <div class="testimonial-nav">
-        <button class="prev-btn">&lt;</button>
-        <button class="next-btn">&gt;</button>
+
+
+      <!-- BOX 2 -->
+      <div class="why-card">
+
+        <i class="fa-solid fa-mobile-screen-button"></i>
+
+        <h3>
+          Responsive Layout
+        </h3>
+
+        <p>
+          Websites optimized for phones, tablets, and desktops.
+        </p>
+
       </div>
-    </div>
-  </section>
 
-  <!-- CTA Section -->
-  <section class="cta">
-    <div class="container">
-      <h3>Ready to start your project?</h3>
-      <p>Contact us today for a free consultation.</p>
-      <a href="https://wa.me/254755570096" target="_blank" class="btn btn-primary">Chat on WhatsApp</a>
-    </div>
-  </section>
 
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="container">
-      <p>© 2026 Mumbi Digital Solutions. All rights reserved.</p>
-    </div>
-  </footer>
+      <!-- BOX 3 -->
+      <div class="why-card">
 
-  <script src="assets/js/main.js"></script>
+        <i class="fa-solid fa-bolt"></i>
+
+        <h3>
+          Fast Performance
+        </h3>
+
+        <p>
+          Optimized websites with excellent speed and smooth experience.
+        </p>
+
+      </div>
+
+
+      <!-- BOX 4 -->
+      <div class="why-card">
+
+        <i class="fa-solid fa-headset"></i>
+
+        <h3>
+          Ongoing Support
+        </h3>
+
+        <p>
+          Reliable communication and support during and after project delivery.
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ===================================================
+     TESTIMONIALS
+=================================================== -->
+<section class="testimonials">
+
+  <div class="container">
+
+    <div class="section-title">
+
+      <span>CLIENT REVIEWS</span>
+
+      <h2>
+        What Clients Say
+      </h2>
+
+    </div>
+
+
+    <div class="testimonial-grid">
+
+      <!-- REVIEW 1 -->
+      <div class="testimonial-card">
+
+        <div class="client-info">
+
+          <img src="assets/images/kelvin.k.png"
+          alt="Client">
+
+          <div>
+
+            <h4>John Clark</h4>
+
+            <span>Business Owner</span>
+
+          </div>
+
+        </div>
+
+        <p>
+          “Very professional service and our website now looks premium.”
+        </p>
+
+      </div>
+
+
+      <!-- REVIEW 2 -->
+      <div class="testimonial-card">
+
+        <div class="client-info">
+
+          <img src="assets/images/Ann wanja.png"
+          alt="Client">
+
+          <div>
+
+            <h4>Christine Kelly</h4>
+
+            <span>Entrepreneur</span>
+
+          </div>
+
+        </div>
+
+        <p>
+          “Excellent communication and beautiful modern website design.”
+        </p>
+
+      </div>
+
+
+      <!-- REVIEW 3 -->
+      <div class="testimonial-card">
+
+        <div class="client-info">
+
+          <img src="assets/images/Tamara tiara.jpg"
+          alt="Client">
+
+          <div>
+
+            <h4>Ann Wanja</h4>
+
+            <span>Company Director</span>
+
+          </div>
+
+        </div>
+
+        <p>
+          “Highly recommended for businesses looking for premium websites.”
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ===================================================
+     CTA SECTION
+=================================================== -->
+<section class="cta-section">
+
+  <div class="container cta-container">
+
+    <h2>
+      Ready To Grow Your Business Online?
+    </h2>
+
+    <p>
+      Let’s create a powerful modern website for your business.
+    </p>
+
+    <a href="https://wa.me/254755570096"
+    target="_blank"
+    class="btn-primary">
+
+      Start Your Project
+
+    </a>
+
+  </div>
+
+</section>
+
+
+<!-- ===================================================
+     FOOTER
+=================================================== -->
+<footer class="footer">
+
+  <div class="container footer-container">
+
+    <div class="footer-logo">
+
+      <img src="assets/images/logo.png"
+      alt="Mumbi Digital Solutions">
+
+      <p>
+        Premium digital solutions for modern businesses.
+      </p>
+
+    </div>
+
+
+    <div class="footer-links">
+
+      <h4>Quick Links</h4>
+
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="contact.html">Contact</a>
+
+    </div>
+
+
+    <div class="footer-contact">
+
+      <h4>Contact</h4>
+
+      <p>Nyeri, Kenya</p>
+      <p>+254 755 570 096</p>
+
+    </div>
+
+  </div>
+
+
+  <div class="footer-bottom">
+
+    <p>
+      © 2026 Mumbi Digital Solutions. All Rights Reserved.
+    </p>
+
+  </div>
+
+</footer>
+
+
+<script src="assets/js/main.js"></script>
+
 </body>
 </html>

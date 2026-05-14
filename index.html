@@ -3,131 +3,388 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mumbi Digital Solutions | Websites That Attract Clients</title>
-  <meta name="description" content="Mumbi Digital Solutions builds modern, professional websites that help businesses grow, attract clients, and build trust online.">
+
+  <title>Mumbi Digital Solutions | Modern Websites That Grow Businesses</title>
+
+  <meta name="description" content="Mumbi Digital Solutions builds premium modern websites that help businesses attract clients, increase trust, and grow online.">
+
+  <!-- CSS -->
   <link rel="stylesheet" href="assets/css/style.css">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
 
-  <!-- Header -->
-  <header class="header">
-    <div class="container">
-      <h1 class="logo">
-        <a href="index.html"><img src="assets/images/logo.png" alt="Mumbi Digital Solutions Logo"></a>
+<!-- ================= HEADER ================= -->
+<header class="header">
+
+  <div class="container nav-container">
+
+    <div class="logo">
+      <a href="index.html">
+        <img src="assets/images/logo.png" alt="Mumbi Digital Solutions Logo">
+      </a>
+    </div>
+
+    <nav class="navbar">
+      <a href="index.html" class="active">Home</a>
+      <a href="services.html">Services</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="about.html">About</a>
+      <a href="contact.html" class="nav-btn">Contact</a>
+    </nav>
+
+  </div>
+
+</header>
+
+
+<!-- ================= HERO SECTION ================= -->
+<section class="hero">
+
+  <div class="hero-overlay"></div>
+
+  <div class="container hero-content">
+
+    <div class="hero-text">
+
+      <span class="hero-tag">
+        #1 Modern Web Design Agency
+      </span>
+
+      <h1>
+        Websites That
+        <span>Attract Clients</span>
+        And Grow Businesses
       </h1>
-      <nav>
-        <a href="index.html">Home</a>
-        <a href="services.html">Services</a>
-        <a href="portfolio.html">Portfolio</a>
-        <a href="about.html">About</a>
-        <a href="contact.html" class="btn">Contact</a>
-      </nav>
+
+      <p>
+        We create premium modern websites for businesses, brands, and companies looking to increase credibility, generate leads, and dominate online.
+      </p>
+
+      <div class="hero-buttons">
+
+        <a href="https://wa.me/254755570096" target="_blank" class="btn-primary">
+          <i class="fa-brands fa-whatsapp"></i>
+          Chat on WhatsApp
+        </a>
+
+        <a href="portfolio.html" class="btn-secondary">
+          View Portfolio
+        </a>
+
+      </div>
+
+      <div class="hero-stats">
+
+        <div>
+          <h3>20+</h3>
+          <p>Projects</p>
+        </div>
+
+        <div>
+          <h3>15+</h3>
+          <p>Clients</p>
+        </div>
+
+        <div>
+          <h3>100%</h3>
+          <p>Responsive</p>
+        </div>
+
+      </div>
+
     </div>
-  </header>
 
-   <!-- Hero Section with Video -->
-  <button id="openVideo" class="btn btn-primary">Watch Intro</button>
 
-<div id="videoModal" class="modal">
-  <div class="modal-content">
-    <span class="close">&times;</span>
-    <video width="100%" controls autoplay>
-      <source src="assets/videos/intro.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
+    <div class="hero-image">
+      <img src="assets/images/imageA.jpeg" alt="Modern Website Design">
+    </div>
+
   </div>
-</div>
-<!-- Redeploy trigger for Netlify -->
 
-
-  <!-- Hero -->
-  <section class="hero">
-    <div class="container">
-      <h2>Professional Websites That Turn Visitors Into Clients</h2>
-      <p>We design modern, responsive, and professional websites that help businesses attract clients, build trust, and grow online.</p>
-      <a href="https://wa.me/254755570096" target="_blank" class="btn btn-primary">Chat on WhatsApp</a>
-    </div>
-  </section>
-
-  <!-- Services Preview -->
-  <section class="services">
-    <div class="container">
-      <h3>Our Services</h3>
-      <div class="service-grid">
-        <div class="service-card">
-          <h4>Business Websites</h4>
-            <img src="assets/images/project1.png" alt="Business Website Project"height="350"width="350">
-          <p>Showcase your services professionally and attract more clients.</p>
-        </div>
-        <div class="service-card">
-          <h4>E-commerce Stores</h4>
-            <img src="assets/images/project2.png" alt="E-commerce Project"height="350"width="350">
-          <p>Sell your products online with secure, responsive stores.</p>
-        </div>
-        <div class="service-card">
-          <h4>Booking & Appointment Systems</h4>
-            <img src="assets/images/project3.png" alt="Booking System Project"height="350"width="450">
-          <p>Make it easy for customers to book your services online.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Testimonials / Social Proof -->
-<section class="testimonials">
-  <div class="container">
-    <h3>What Our Clients Say</h3>
-    <div class="testimonial-slider">
-
-      <!-- Slide 1 -->
-      <div class="testimonial-slide">
-        <img src="assets/images/kelvin.k.png" alt="Client Testimonial">
-        <p>"Mumbi Digital Solutions transformed our website. Our client inquiries doubled in a month!"</p>
-        <h5>- john clack</h5>
-      </div>
-
-      <!-- Slide 2 -->
-      <div class="testimonial-slide">
-        <img src="assets/images/Ann wanja.png" alt="Client Testimonial">
-        <p>"Professional, fast, and exactly what we needed to grow our business online."</p>
-        <h5>- Christine Kally</h5>
-      </div>
-
-      <!-- Slide 3 -->
-      <div class="testimonial-slide">
-        <img src="assets/images/Tamara tiara.jpg" alt="Client Testimonial">
-        <p>"Highly recommended! Their website design helped us attract more customers immediately."</p>
-        <h5>- Ann Wanja</h5>
-      </div>
-
-    </div>
-
-    <!-- Navigation Buttons -->
-    <div class="testimonial-nav">
-      <button class="prev-btn">&lt;</button>
-      <button class="next-btn">&gt;</button>
-    </div>
-  </div>
 </section>
 
 
+<!-- ================= TRUST SECTION ================= -->
+<section class="trust-section">
 
-  <!-- CTA Section -->
-  <section class="cta">
-    <div class="container">
-      <h3>Ready to Grow Your Business Online?</h3>
-      <p>Contact us today and get a free consultation.</p>
-      <a href="https://wa.me/254755570096" target="_blank" class="btn btn-primary">Chat on WhatsApp</a>
+  <div class="container trust-container">
+
+    <div class="trust-box">
+      <i class="fa-solid fa-code"></i>
+      <h3>Modern Coding</h3>
+      <p>Clean modern development with fast loading performance.</p>
     </div>
-  </section>
 
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="container">
-      <p>© 2026 Mumbi Digital Solutions. All rights reserved.</p>
+    <div class="trust-box">
+      <i class="fa-solid fa-mobile-screen"></i>
+      <h3>Fully Responsive</h3>
+      <p>Perfect experience across phones, tablets, and desktops.</p>
     </div>
-  </footer>
 
-  <script src="assets/js/main.js"></script>
+    <div class="trust-box">
+      <i class="fa-solid fa-chart-line"></i>
+      <h3>Business Growth</h3>
+      <p>Designed to increase trust, leads, and customer conversion.</p>
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ================= SERVICES ================= -->
+<section class="services">
+
+  <div class="container">
+
+    <div class="section-title">
+      <span>OUR SERVICES</span>
+      <h2>Professional Digital Solutions</h2>
+      <p>
+        We help businesses establish a strong professional online presence.
+      </p>
+    </div>
+
+
+    <div class="services-grid">
+
+      <!-- CARD 1 -->
+      <div class="service-card">
+
+        <div class="service-image">
+          <img src="assets/images/project1.png" alt="Business Website">
+        </div>
+
+        <div class="service-content">
+          <i class="fa-solid fa-globe"></i>
+          <h3>Business Websites</h3>
+          <p>
+            Professional websites that build trust and attract more clients.
+          </p>
+        </div>
+
+      </div>
+
+
+      <!-- CARD 2 -->
+      <div class="service-card">
+
+        <div class="service-image">
+          <img src="assets/images/project2.png" alt="Ecommerce Website">
+        </div>
+
+        <div class="service-content">
+          <i class="fa-solid fa-cart-shopping"></i>
+          <h3>E-commerce Stores</h3>
+          <p>
+            Sell products online using secure modern ecommerce systems.
+          </p>
+        </div>
+
+      </div>
+
+
+      <!-- CARD 3 -->
+      <div class="service-card">
+
+        <div class="service-image">
+          <img src="assets/images/project3.png" alt="Booking Systems">
+        </div>
+
+        <div class="service-content">
+          <i class="fa-solid fa-calendar-check"></i>
+          <h3>Booking Systems</h3>
+          <p>
+            Appointment and reservation systems for modern businesses.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ================= PORTFOLIO PREVIEW ================= -->
+<section class="portfolio-preview">
+
+  <div class="container">
+
+    <div class="section-title">
+      <span>OUR WORK</span>
+      <h2>Recent Projects</h2>
+    </div>
+
+
+    <div class="portfolio-grid">
+
+      <div class="portfolio-card">
+        <img src="assets/images/project1.png" alt="Project">
+      </div>
+
+      <div class="portfolio-card">
+        <img src="assets/images/project2.png" alt="Project">
+      </div>
+
+      <div class="portfolio-card">
+        <img src="assets/images/project3.png" alt="Project">
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ================= TESTIMONIALS ================= -->
+<section class="testimonials">
+
+  <div class="container">
+
+    <div class="section-title">
+      <span>CLIENT REVIEWS</span>
+      <h2>What Clients Say</h2>
+    </div>
+
+
+    <div class="testimonial-grid">
+
+      <div class="testimonial-card">
+
+        <div class="client-info">
+          <img src="assets/images/kelvin.k.png" alt="Client">
+
+          <div>
+            <h4>John Clark</h4>
+            <span>Business Owner</span>
+          </div>
+        </div>
+
+        <p>
+          “Mumbi Digital Solutions completely transformed our online presence and increased our inquiries significantly.”
+        </p>
+
+      </div>
+
+
+      <div class="testimonial-card">
+
+        <div class="client-info">
+          <img src="assets/images/Ann wanja.png" alt="Client">
+
+          <div>
+            <h4>Christine Kelly</h4>
+            <span>Entrepreneur</span>
+          </div>
+        </div>
+
+        <p>
+          “Very professional team with excellent communication and amazing website quality.”
+        </p>
+
+      </div>
+
+
+      <div class="testimonial-card">
+
+        <div class="client-info">
+          <img src="assets/images/Tamara tiara.jpg" alt="Client">
+
+          <div>
+            <h4>Ann Wanja</h4>
+            <span>Company Director</span>
+          </div>
+        </div>
+
+        <p>
+          “Our website now looks modern, premium, and professional. Highly recommended.”
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ================= CTA ================= -->
+<section class="cta-section">
+
+  <div class="container cta-container">
+
+    <h2>
+      Ready To Build A Website That Wins Clients?
+    </h2>
+
+    <p>
+      Let's create a modern professional website for your business today.
+    </p>
+
+    <a href="https://wa.me/254755570096" target="_blank" class="btn-primary">
+      Start Your Project
+    </a>
+
+  </div>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+
+  <div class="container footer-container">
+
+    <div class="footer-logo">
+      <img src="assets/images/logo.png" alt="Mumbi Digital Solutions">
+      <p>
+        Premium web design and development solutions for modern businesses.
+      </p>
+    </div>
+
+
+    <div class="footer-links">
+      <h4>Quick Links</h4>
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="contact.html">Contact</a>
+    </div>
+
+
+    <div class="footer-contact">
+      <h4>Contact</h4>
+      <p>Nyeri, Kenya</p>
+      <p>+254 755 570 096</p>
+    </div>
+
+  </div>
+
+
+  <div class="footer-bottom">
+    <p>
+      © 2026 Mumbi Digital Solutions. All Rights Reserved.
+    </p>
+  </div>
+
+</footer>
+
+
+<script src="assets/js/main.js"></script>
+
 </body>
 </html>
+
