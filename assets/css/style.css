@@ -64,8 +64,9 @@ section{
 }
 
 .logo img{
-  height:60px;
+  height:85px;
   width:auto;
+  object-fit:contain;
 }
 
 .navbar{
@@ -565,7 +566,7 @@ section{
   }
 
   .logo img{
-    height:55px;
+    height:75px;
   }
 
   .navbar{
