@@ -1,76 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <meta name="viewport"
-  content="width=device-width, initial-scale=1.0">
-
-  <title>
-    Contact Us | Mumbi Digital Solutions
-  </title>
-
-  <meta name="description"
-  content="Contact Mumbi Digital Solutions for premium website design, ecommerce stores, and digital solutions.">
+  <title>Contact | Mumbi Digital Solutions</title>
 
   <!-- CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <!-- FONT AWESOME -->
   <link rel="stylesheet"
-  href="assets/css/style.css">
-
-  <!-- Google Fonts -->
-  <link rel="preconnect"
-  href="https://fonts.googleapis.com">
-
-  <link rel="preconnect"
-  href="https://fonts.gstatic.com"
-  crossorigin>
-
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
-  rel="stylesheet">
-
-  <!-- Font Awesome -->
-  <link rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
 <body>
 
-<!-- ===================================================
-     HEADER
-=================================================== -->
+<!-- ================= HEADER ================= -->
 <header class="header">
 
   <div class="container nav-container">
 
+    <!-- LOGO -->
     <div class="logo">
-
-      <a href="index.html">
-
-        <img src="assets/images/logo.png"
-        alt="Mumbi Digital Solutions Logo">
-
-      </a>
-
+      <img src="assets/images/logo.png" alt="Logo">
     </div>
 
-
+    <!-- NAVIGATION -->
     <nav class="navbar">
-
       <a href="index.html">Home</a>
-
       <a href="services.html">Services</a>
-
       <a href="portfolio.html">Portfolio</a>
-
       <a href="about.html">About</a>
-
-      <a href="contact.html"
-      class="active nav-btn">
+      <a href="contact.html" class="active nav-btn">
         Contact
       </a>
-
     </nav>
 
   </div>
@@ -78,24 +42,25 @@
 </header>
 
 
-<!-- ===================================================
-     CONTACT HERO
-=================================================== -->
-<section class="contact-hero">
+<!-- ================= PAGE HERO ================= -->
+<section class="page-hero contact-hero">
 
-  <div class="container contact-hero-content">
+  <div class="container page-hero-content">
 
-    <span class="hero-tag">
+    <span class="page-tag">
       CONTACT US
     </span>
 
     <h1>
-      Let’s Build Something
-      Amazing Together
+      Let’s Build Your
+      Digital Presence
     </h1>
 
     <p>
-      Have a project idea or need a professional website for your business? Reach out today and let’s discuss how we can help grow your online presence.
+      Ready to elevate your business online?
+      Let’s create premium websites, branding,
+      ecommerce stores and modern digital
+      experiences that help your business grow.
     </p>
 
   </div>
@@ -103,298 +68,216 @@
 </section>
 
 
-<!-- ===================================================
-     CONTACT SECTION
-=================================================== -->
-<section class="contact-page">
+<!-- ================= CONTACT SECTION ================= -->
+<section class="contact-section">
 
-  <div class="container contact-container">
+  <div class="container">
 
-    <!-- LEFT SIDE -->
-    <div class="contact-info">
+    <div class="contact-grid">
 
-      <div class="section-title left-align">
+      <!-- LEFT -->
+      <div class="contact-info">
 
-        <span>GET IN TOUCH</span>
+        <div class="section-title left">
 
-        <h2>
-          Ready To Start Your Project?
-        </h2>
+          <span>GET IN TOUCH</span>
+
+          <h2>
+            We’d Love To
+            Hear From You
+          </h2>
+
+        </div>
+
+        <p class="contact-text">
+          Whether you need a premium website,
+          online store, branding package or
+          complete digital strategy — Mumbi
+          Digital Solutions is ready to help.
+        </p>
+
+
+        <!-- CONTACT CARD -->
+        <div class="contact-card">
+
+          <div class="contact-icon">
+            <i class="fa-solid fa-envelope"></i>
+          </div>
+
+          <div>
+
+            <h3>Email Address</h3>
+
+            <p>
+              mumbidigitalsolutions@gmail.com
+            </p>
+
+          </div>
+
+        </div>
+
+
+        <!-- CONTACT CARD -->
+        <div class="contact-card">
+
+          <div class="contact-icon">
+            <i class="fa-brands fa-whatsapp"></i>
+          </div>
+
+          <div>
+
+            <h3>WhatsApp</h3>
+
+            <p>
+              +254 755 570 096
+            </p>
+
+          </div>
+
+        </div>
+
+
+        <!-- CONTACT CARD -->
+        <div class="contact-card">
+
+          <div class="contact-icon">
+            <i class="fa-solid fa-location-dot"></i>
+          </div>
+
+          <div>
+
+            <h3>Location</h3>
+
+            <p>
+              Nairobi, Kenya
+            </p>
+
+          </div>
+
+        </div>
 
       </div>
 
-      <p class="contact-text">
-        We help businesses create modern websites that attract clients, increase trust, and grow brands online.
+
+<form
+action="https://formsubmit.co/mumbidigitalsolutions@gmail.com"
+method="POST">
+
+  <!-- Redirect to thank you page -->
+  <input type="hidden"
+  name="_next"
+  value="sharonmumb-source.github.io/Mumbi-Digital-Solution/thankyou.html">
+
+  <!-- Disable captcha -->
+  <input type="hidden"
+  name="_captcha"
+  value="false">
+
+  <div class="input-group">
+    <input type="text"
+    name="name"
+    placeholder="Full Name"
+    required>
+  </div>
+
+  <div class="input-group">
+    <input type="email"
+    name="email"
+    placeholder="Email Address"
+    required>
+  </div>
+
+  <div class="input-group">
+    <input type="text"
+    name="business"
+    placeholder="Business Name">
+  </div>
+
+  <div class="input-group">
+    <textarea
+    name="message"
+    rows="7"
+    placeholder="Tell us about your project..."
+    required></textarea>
+  </div>
+
+  <button type="submit"
+  class="btn-primary">
+
+    <i class="fa-solid fa-paper-plane"></i>
+
+    Send Message
+
+  </button>
+
+</form>
+
+<!-- ================= FAQ SECTION ================= -->
+<section class="faq-section">
+
+  <div class="container">
+
+    <div class="section-title">
+
+      <span>FAQ</span>
+
+      <h2>
+        Frequently Asked Questions
+      </h2>
+
+      <p>
+        Answers to some common questions
+        about our services and process.
       </p>
 
-
-      <!-- INFO BOX -->
-      <div class="contact-box">
-
-        <i class="fa-brands fa-whatsapp"></i>
-
-        <div>
-          <h3>WhatsApp</h3>
-          <p>+254 755 570 096</p>
-        </div>
-
-      </div>
-
-
-      <!-- INFO BOX -->
-      <div class="contact-box">
-
-        <i class="fa-solid fa-location-dot"></i>
-
-        <div>
-          <h3>Location</h3>
-          <p>Nyeri, Kenya</p>
-        </div>
-
-      </div>
-
-
-      <!-- INFO BOX -->
-      <div class="contact-box">
-
-        <i class="fa-solid fa-clock"></i>
-
-        <div>
-          <h3>Availability</h3>
-          <p>Monday - Saturday</p>
-        </div>
-
-      </div>
-
-
-      <!-- SOCIALS -->
-      <div class="contact-socials">
-
-        <a href="#">
-          <i class="fa-brands fa-facebook-f"></i>
-        </a>
-
-        <a href="#">
-          <i class="fa-brands fa-instagram"></i>
-        </a>
-
-        <a href="#">
-          <i class="fa-brands fa-linkedin-in"></i>
-        </a>
-
-      </div>
-
     </div>
 
 
-    <!-- RIGHT SIDE -->
-    <div class="contact-form-wrapper">
+    <div class="faq-container">
 
-      <form
-      name="contact"
-      method="POST"
-      data-netlify="true"
-      class="contact-form"
-      action="thank-you.html">
-
-        <input type="hidden"
-        name="form-name"
-        value="contact">
-
-
-        <!-- NAME -->
-        <div class="input-group">
-
-          <label for="name">
-            Full Name
-          </label>
-
-          <input type="text"
-          id="name"
-          name="name"
-          placeholder="Enter your full name"
-          required>
-
-        </div>
-
-
-        <!-- EMAIL -->
-        <div class="input-group">
-
-          <label for="email">
-            Email Address
-          </label>
-
-          <input type="email"
-          id="email"
-          name="email"
-          placeholder="Enter your email"
-          required>
-
-        </div>
-
-
-        <!-- SERVICE -->
-        <div class="input-group">
-
-          <label for="service">
-            Service Needed
-          </label>
-
-          <select id="service"
-          name="service"
-          required>
-
-            <option value="">
-              Select Service
-            </option>
-
-            <option>
-              Business Website
-            </option>
-
-            <option>
-              Ecommerce Store
-            </option>
-
-            <option>
-              Website Redesign
-            </option>
-
-            <option>
-              Booking System
-            </option>
-
-          </select>
-
-        </div>
-
-
-        <!-- MESSAGE -->
-        <div class="input-group">
-
-          <label for="message">
-            Project Details
-          </label>
-
-          <textarea
-          id="message"
-          name="message"
-          rows="6"
-          placeholder="Tell us about your project..."
-          required></textarea>
-
-        </div>
-
-
-        <!-- BUTTON -->
-        <button type="submit"
-        class="btn-primary">
-
-          Send Message
-
-        </button>
-
-
-        <!-- WHATSAPP -->
-        <a href="https://wa.me/254755570096"
-        target="_blank"
-        class="whatsapp-contact-btn">
-
-          <i class="fa-brands fa-whatsapp"></i>
-
-          Chat on WhatsApp
-
-        </a>
-
-      </form>
-
-    </div>
-
-  </div>
-
-</section>
-
-
-<!-- ===================================================
-     WHY CLIENTS TRUST US
-=================================================== -->
-<section class="why-us">
-
-  <div class="container">
-
-    <div class="section-title">
-
-      <span>WHY CLIENTS TRUST US</span>
-
-      <h2>
-        Professional Digital Solutions
-      </h2>
-
-    </div>
-
-
-    <div class="why-grid">
-
-      <!-- BOX 1 -->
-      <div class="why-card">
-
-        <i class="fa-solid fa-laptop-code"></i>
+      <!-- FAQ -->
+      <div class="faq-item">
 
         <h3>
-          Premium Design
+          How long does a website take?
         </h3>
 
         <p>
-          Modern website designs that instantly improve business credibility.
+          Most business websites take between
+          1–3 weeks depending on the project
+          size and required features.
         </p>
 
       </div>
 
 
-      <!-- BOX 2 -->
-      <div class="why-card">
-
-        <i class="fa-solid fa-mobile-screen-button"></i>
+      <!-- FAQ -->
+      <div class="faq-item">
 
         <h3>
-          Responsive Layout
+          Do you redesign websites?
         </h3>
 
         <p>
-          Websites optimized for phones, tablets, and desktops.
+          Yes. We redesign outdated websites
+          into modern, premium and responsive
+          digital experiences.
         </p>
 
       </div>
 
 
-      <!-- BOX 3 -->
-      <div class="why-card">
-
-        <i class="fa-solid fa-bolt"></i>
+      <!-- FAQ -->
+      <div class="faq-item">
 
         <h3>
-          Fast Performance
+          Do you build ecommerce websites?
         </h3>
 
         <p>
-          Optimized websites with excellent speed and smooth experience.
-        </p>
-
-      </div>
-
-
-      <!-- BOX 4 -->
-      <div class="why-card">
-
-        <i class="fa-solid fa-headset"></i>
-
-        <h3>
-          Ongoing Support
-        </h3>
-
-        <p>
-          Reliable communication and support during and after project delivery.
+          Absolutely. We create modern online
+          stores optimized for performance,
+          trust and conversions.
         </p>
 
       </div>
@@ -406,127 +289,26 @@
 </section>
 
 
-<!-- ===================================================
-     TESTIMONIALS
-=================================================== -->
-<section class="testimonials">
-
-  <div class="container">
-
-    <div class="section-title">
-
-      <span>CLIENT REVIEWS</span>
-
-      <h2>
-        What Clients Say
-      </h2>
-
-    </div>
-
-
-    <div class="testimonial-grid">
-
-      <!-- REVIEW 1 -->
-      <div class="testimonial-card">
-
-        <div class="client-info">
-
-          <img src="assets/images/kelvin.k.png"
-          alt="Client">
-
-          <div>
-
-            <h4>John Clark</h4>
-
-            <span>Business Owner</span>
-
-          </div>
-
-        </div>
-
-        <p>
-          “Very professional service and our website now looks premium.”
-        </p>
-
-      </div>
-
-
-      <!-- REVIEW 2 -->
-      <div class="testimonial-card">
-
-        <div class="client-info">
-
-          <img src="assets/images/Ann wanja.png"
-          alt="Client">
-
-          <div>
-
-            <h4>Christine Kelly</h4>
-
-            <span>Entrepreneur</span>
-
-          </div>
-
-        </div>
-
-        <p>
-          “Excellent communication and beautiful modern website design.”
-        </p>
-
-      </div>
-
-
-      <!-- REVIEW 3 -->
-      <div class="testimonial-card">
-
-        <div class="client-info">
-
-          <img src="assets/images/Tamara tiara.jpg"
-          alt="Client">
-
-          <div>
-
-            <h4>Ann Wanja</h4>
-
-            <span>Company Director</span>
-
-          </div>
-
-        </div>
-
-        <p>
-          “Highly recommended for businesses looking for premium websites.”
-        </p>
-
-      </div>
-
-    </div>
-
-  </div>
-
-</section>
-
-
-<!-- ===================================================
-     CTA SECTION
-=================================================== -->
+<!-- ================= CTA SECTION ================= -->
 <section class="cta-section">
 
   <div class="container cta-container">
 
     <h2>
-      Ready To Grow Your Business Online?
+      Ready To Start Your Project?
     </h2>
 
     <p>
-      Let’s create a powerful modern website for your business.
+      Let’s build a powerful online presence
+      for your business today.
     </p>
 
     <a href="https://wa.me/254755570096"
-    target="_blank"
     class="btn-primary">
 
-      Start Your Project
+      <i class="fa-brands fa-whatsapp"></i>
+
+      Chat On WhatsApp
 
     </a>
 
@@ -535,25 +317,26 @@
 </section>
 
 
-<!-- ===================================================
-     FOOTER
-=================================================== -->
+<!-- ================= FOOTER ================= -->
 <footer class="footer">
 
   <div class="container footer-container">
 
+    <!-- FOOTER LOGO -->
     <div class="footer-logo">
 
       <img src="assets/images/logo.png"
-      alt="Mumbi Digital Solutions">
+      alt="Logo">
 
       <p>
-        Premium digital solutions for modern businesses.
+        Premium digital solutions for modern
+        businesses looking to grow online.
       </p>
 
     </div>
 
 
+    <!-- QUICK LINKS -->
     <div class="footer-links">
 
       <h4>Quick Links</h4>
@@ -561,24 +344,77 @@
       <a href="index.html">Home</a>
       <a href="services.html">Services</a>
       <a href="portfolio.html">Portfolio</a>
+      <a href="about.html">About</a>
       <a href="contact.html">Contact</a>
 
     </div>
 
 
+    <!-- CONTACT -->
     <div class="footer-contact">
+
       <h4>Contact</h4>
-      <p>Nairobi, Kenya</p>
-      <p>+254 755 570 096</p>
+
+      <p>
+        Email:
+        mumbidigitalsolutions@gmail.com
+      </p>
+
+      <p>
+        WhatsApp:
+        +254 755 570 096
+      </p>
+
     </div>
 
   </div>
+  <div class="footer-social">
+
+  <h4>Follow Us</h4>
+
+  <div class="social-icons">
 
 
+    <a href="https://www.instagram.com/mumbi_digitalsolutions"
+    target="_blank">
+
+      <i class="fa-brands fa-instagram"></i>
+
+    </a>
+
+    <a href="https://www.facebook.com/profile.php?id=61586191444506
+    target="_blank">
+
+      <i class="fa-brands fa-facebook-f"></i>
+
+    </a>
+
+    <a href="https://www.linkedin.com/in/mumbi-digital-solutions-1a0155411"
+    target="_blank">
+
+      <i class="fa-brands fa-linkedin-in"></i>
+
+    </a>
+
+    <a href="https://vm.tiktok.com/ZS9YtVhTy4bbn-0xLt6/"
+    target="_blank">
+
+      <i class="fa-brands fa-tiktok"></i>
+
+    </a>
+
+
+  </div>
+
+</div>
+
+
+  <!-- FOOTER BOTTOM -->
   <div class="footer-bottom">
 
     <p>
-      © 2026 Mumbi Digital Solutions. All Rights Reserved.
+      © 2026 Mumbi Digital Solutions.
+      All Rights Reserved.
     </p>
 
   </div>
@@ -586,6 +422,7 @@
 </footer>
 
 
+<!-- JS -->
 <script src="assets/js/main.js"></script>
 
 </body>
