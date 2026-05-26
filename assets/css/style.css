@@ -12,12 +12,16 @@ html{
   scroll-behavior:smooth;
 }
 
+
 body{
   font-family:'Poppins',sans-serif;
   background:#060b16;
   color:#fff;
   overflow-x:hidden;
   line-height:1.7;
+}
+p{
+  max-width:700px;
 }
 
 .container{
@@ -106,6 +110,89 @@ section{
   border-radius:60px;
   box-shadow:0 15px 35px rgba(37,99,235,0.35);
 }
+/* =========================================
+   MOBILE HAMBURGER MENU
+========================================= */
+
+.menu-toggle{
+  display:none;
+  font-size:1.8rem;
+  color:#fff;
+  cursor:pointer;
+  z-index:1001;
+}
+
+
+/* MOBILE NAVIGATION */
+
+@media(max-width:768px){
+
+  .nav-container{
+    flex-direction:row;
+    justify-content:space-between;
+    align-items:center;
+  }
+
+  .logo img{
+    height:70px;
+  }
+
+  .menu-toggle{
+    display:block;
+  }
+
+  .navbar{
+    position:absolute;
+
+    top:100%;
+
+    left:0;
+
+    width:100%;
+
+    background:
+    rgba(6,11,22,0.98);
+
+    backdrop-filter:blur(15px);
+
+    flex-direction:column;
+
+    align-items:center;
+
+    gap:25px;
+
+    padding:35px 0;
+
+    border-top:
+    1px solid rgba(255,255,255,0.05);
+
+    transform:
+    translateY(-20px);
+
+    opacity:0;
+
+    visibility:hidden;
+
+    transition:0.4s ease;
+
+    z-index:999;
+  }
+
+  .navbar.active{
+    opacity:1;
+    visibility:visible;
+    transform:translateY(0);
+  }
+
+  .navbar a{
+    font-size:1rem;
+  }
+
+  .nav-btn{
+    margin-top:10px;
+  }
+
+}
 
 
 /* =========================
@@ -123,32 +210,7 @@ section{
   background:#060b16;
 }
 
-/* =========================
-   HERO BACKGROUND SLIDER
-========================= */
 
-.hero-slider{
-  position:absolute;
-  inset:0;
-  z-index:-2;
-}
-
-.hero-slide{
-  position:absolute;
-  inset:0;
-
-  opacity:0;
-
-  background-size:cover;
-  background-position:center;
-  background-repeat:no-repeat;
-
-  transform:scale(1.08);
-
-  animation:
-  heroSlider 20s infinite,
-  heroZoom 20s infinite;
-}
 
 /* ===== SLIDES ===== */
 
@@ -247,19 +309,9 @@ section{
 
 }
 
-}
 
-@keyframes heroZoom{
 
-  0%{
-    transform:scale(1.08);
-  }
 
-  100%{
-    transform:scale(1.18);
-  }
-
-}
 
 /* =========================
    HERO OVERLAY
@@ -544,11 +596,11 @@ section{
 
 @media(max-width:768px){
 
-  .hero{
-    min-height:auto;
-    padding-top:170px;
-    padding-bottom:100px;
-  }
+.hero{
+  min-height:auto;
+  padding-top:140px;
+  padding-bottom:80px;
+}
 
   .hero-text h1{
     font-size:2.8rem;
@@ -1279,19 +1331,30 @@ section{
 
 @media(max-width:768px){
 
-  section{
-    padding:80px 0;
+  .header{
+    padding:10px 0;
   }
 
   .nav-container{
     flex-direction:column;
-    gap:20px;
+    gap:15px;
+  }
+
+  .logo img{
+    height:70px;
   }
 
   .navbar{
+    gap:15px;
     flex-wrap:wrap;
     justify-content:center;
   }
+
+  .navbar a{
+    font-size:14px;
+  }
+
+}
 
   .hero{
     padding-top:180px;
@@ -1622,13 +1685,13 @@ section{
 .contact-section{
   background:#060b16;
 }
-
-.contact-grid{
+.contact-container{
   display:grid;
   grid-template-columns:1fr 1fr;
-  gap:60px;
+  gap:50px;
   align-items:start;
 }
+
 
 /* LEFT */
 
@@ -1658,6 +1721,7 @@ section{
   border:1px solid rgba(255,255,255,0.05);
 
   transition:0.4s;
+  min-height:140px;
 }
 
 .contact-card:hover{
@@ -2132,7 +2196,9 @@ section{
 }
 
 .social-icons a:hover{
-  transform:translateY(-6px);
+  transform:
+  translateY(-6px)
+  scale(1.08);
 
   background:linear-gradient(
   135deg,
@@ -2142,5 +2208,115 @@ section{
   border-color:#38bdf8;
 
   box-shadow:
-  0 15px 30px rgba(37,99,235,0.35);
+  0 15px 35px rgba(37,99,235,0.45);
+}
+/* =========================================
+   CONTACT PAGE MOBILE FIX
+========================================= */
+
+@media(max-width:768px){
+
+  .contact-hero{
+    padding-top:160px;
+    padding-bottom:90px;
+    text-align:center;
+  }
+
+  .contact-hero h1{
+    font-size:2.5rem;
+    line-height:1.2;
+  }
+
+  .contact-hero p{
+    font-size:1rem;
+    width:100%;
+  }
+
+  .contact-container{
+    grid-template-columns:1fr;
+    gap:40px;
+  }
+
+  .contact-info-box,
+  .contact-form-box{
+    padding:30px 22px;
+    border-radius:25px;
+  }
+
+  .contact-form-box form{
+    width:100%;
+  }
+
+  .input-group input,
+  .input-group textarea{
+    font-size:15px;
+    padding:16px;
+  }
+
+  .contact-form-box .btn-primary{
+    width:100%;
+    justify-content:center;
+  }
+
+  .contact-info-item{
+    align-items:flex-start;
+    gap:15px;
+  }
+
+  .contact-info-item i{
+    width:55px;
+    height:55px;
+    font-size:1.1rem;
+  }
+
+  .footer-container{
+    grid-template-columns:1fr;
+    text-align:center;
+    gap:40px;
+  }
+
+  .footer-logo img{
+    margin:auto;
+    margin-bottom:20px;
+  }
+
+  .footer-socials{
+    justify-content:center;
+  }
+
+}
+
+
+/* =========================================
+   EXTRA SMALL DEVICES
+========================================= */
+
+@media(max-width:480px){
+
+  .contact-hero h1{
+    font-size:2rem;
+  }
+
+  .contact-form-box,
+  .contact-info-box{
+    padding:25px 18px;
+  }
+
+  .input-group input,
+  .input-group textarea{
+    padding:14px;
+    border-radius:14px;
+  }
+
+  .btn-primary,
+  .btn-secondary{
+    width:100%;
+  }
+
+}
+/* STICKY HEADER EFFECT */
+
+.header.sticky{
+  background:rgba(6,11,22,0.96);
+  box-shadow:0 10px 30px rgba(0,0,0,0.35);
 }
