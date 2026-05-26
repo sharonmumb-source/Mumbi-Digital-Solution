@@ -160,49 +160,84 @@
 
 
 <form
-action="https://formsubmit.co/mumbidigitalsolutions@gmail.com"
-method="POST">
+  action="https://formsubmit.co/mumbidigitalsolutions@gmail.com"
+  method="POST"
+  class="contact-form"
+>
 
-  <!-- Redirect to thank you page -->
-  <input type="hidden"
-  name="_next"
-  value="sharonmumb-source.github.io/Mumbi-Digital-Solution/thankyou.html">
+  <!-- Redirect After Submit -->
+  <input
+    type="hidden"
+    name="_next"
+    value="https://sharonmumb-source.github.io/Mumbi-Digital-Solution/thankyou.html"
+  >
 
-  <!-- Disable captcha -->
-  <input type="hidden"
-  name="_captcha"
-  value="false">
+  <!-- Disable Captcha -->
+  <input
+    type="hidden"
+    name="_captcha"
+    value="false"
+  >
 
+  <!-- Optional Subject -->
+  <input
+    type="hidden"
+    name="_subject"
+    value="New Website Inquiry - Mumbi Digital Solutions"
+  >
+
+  <!-- Name -->
   <div class="input-group">
-    <input type="text"
-    name="name"
-    placeholder="Full Name"
-    required>
+
+    <input
+      type="text"
+      name="name"
+      placeholder="Full Name"
+      required
+    >
+
   </div>
 
+  <!-- Email -->
   <div class="input-group">
-    <input type="email"
-    name="email"
-    placeholder="Email Address"
-    required>
+
+    <input
+      type="email"
+      name="email"
+      placeholder="Email Address"
+      required
+    >
+
   </div>
 
+  <!-- Business -->
   <div class="input-group">
-    <input type="text"
-    name="business"
-    placeholder="Business Name">
+
+    <input
+      type="text"
+      name="business"
+      placeholder="Business Name"
+    >
+
   </div>
 
+  <!-- Message -->
   <div class="input-group">
+
     <textarea
-    name="message"
-    rows="7"
-    placeholder="Tell us about your project..."
-    required></textarea>
+      rows="7"
+      name="message"
+      placeholder="Tell us about your project..."
+      required
+    ></textarea>
+
   </div>
 
-  <button type="submit"
-  class="btn-primary">
+  <!-- Submit -->
+  <button
+    type="submit"
+    class="btn-primary"
+  >
 
     <i class="fa-solid fa-paper-plane"></i>
 
