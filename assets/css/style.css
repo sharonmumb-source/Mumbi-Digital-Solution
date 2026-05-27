@@ -2320,3 +2320,106 @@ section{
   background:rgba(6,11,22,0.96);
   box-shadow:0 10px 30px rgba(0,0,0,0.35);
 }
+/* =========================================
+   HERO ACTIONS
+========================================= */
+
+.hero-actions{
+  display:flex;
+  flex-direction:column;
+  gap:28px;
+  margin-bottom:55px;
+}
+
+/* MAIN BUTTONS */
+
+.hero-buttons{
+  display:flex;
+  gap:20px;
+  flex-wrap:wrap;
+}
+
+/* MINI LINKS */
+
+.hero-mini-links{
+  display:flex;
+  gap:18px;
+  flex-wrap:wrap;
+  align-items:center;
+}
+
+.hero-mini-links a{
+  display:inline-flex;
+  align-items:center;
+  gap:10px;
+
+  color:#cbd5e1;
+
+  font-size:15px;
+  font-weight:500;
+
+  transition:0.3s;
+}
+
+.hero-mini-links a:hover{
+  color:#38bdf8;
+  transform:translateY(-2px);
+}
+
+/* WHATSAPP */
+
+.hero-whatsapp{
+  background:rgba(34,197,94,0.12);
+
+  border:1px solid rgba(34,197,94,0.25);
+
+  padding:12px 22px;
+
+  border-radius:50px;
+
+  color:#22c55e !important;
+
+  font-weight:600;
+}
+
+.hero-whatsapp:hover{
+  background:#22c55e;
+  color:#fff !important;
+
+  box-shadow:
+  0 15px 35px rgba(34,197,94,0.35);
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+  .hero-buttons{
+    flex-direction:column;
+  }
+
+  .hero-mini-links{
+    justify-content:center;
+    text-align:center;
+  }
+
+}
+.portfolio-page-card:hover{
+  transform:translateY(-12px);
+
+  border-color:#38bdf8;
+
+  box-shadow:
+  0 25px 60px rgba(0,0,0,0.45),
+  0 0 30px rgba(56,189,248,0.18);
+}
+.project-badge{
+  display:inline-block;
+  padding:8px 14px;
+  background:rgba(56,189,248,0.1);
+  border:1px solid rgba(56,189,248,0.2);
+  color:#38bdf8;
+  border-radius:30px;
+  font-size:13px;
+  margin-top:15px;
+}
